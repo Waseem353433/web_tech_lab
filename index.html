@@ -1,18 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Web Tech Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio - Web Tech Lab</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#003366;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#222;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+    nav a{
+        display:block;
+        margin:8px 0;
+    }
+}
+</style>
+
 </head>
 <body>
 
-<h1>Welcome to My Web Technology Lab</h1>
-<p>This website is hosted using GitHub Pages.</p>
+<header>
+<h1>Waseem Ahmad</h1>
+<p>BS Computer Science Student</p>
+<p>Web Technology Lab Portfolio</p>
+</header>
 
+<nav>
+<a href="Lab_02/profile.html">Profile</a>
+<a href="Lab_02/navigation.html">Navigation Menu</a>
+<a href="Lab_02/registration.html">Registration Form</a>
+<a href="lab02.html">HTML Lab</a>
+<a href="https://github.com/">GitHub</a>
+<a href="https://www.uetpeshawar.edu.pk">UET Website</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>Professional Introduction</h2>
+<p>Hello! My name is Waseem Ahmad. I am a BS Computer Science student learning Web Development, Programming, and Database Systems. This portfolio contains my Web Technology lab exercises.</p>
+</div>
+
+<div class="card">
+<h2>Lab Exercises</h2>
 <ul>
-    <li><a href="Lab_02/profile.html">Profile Page</a></li>
-    <li><a href="Lab_02/navigation.html">Navigation Menu</a></li>
-    <li><a href="Lab_02/registration.html">Registration Form</a></li>
+<li><a href="Lab_02/profile.html">Task 1 – Personal Profile Page</a></li>
+<li><a href="Lab_02/navigation.html">Task 3 – Navigation Menu</a></li>
+<li><a href="Lab_02/registration.html">Task 4 – Registration Form</a></li>
 </ul>
+</div>
+
+<div class="card">
+<h2>My GitHub Profile</h2>
+<p>Visit my projects on GitHub:</p>
+<a href="https://github.com/Waseem353433">GitHub Profile</a>
+</div>
+
+</div>
+
+<footer>
+<p>Web Technology Lab | BSCS | 
+:contentReference[oaicite:0]{index=0}</p>
+</footer>
 
 </body>
 </html>
