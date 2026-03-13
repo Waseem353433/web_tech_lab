@@ -1,0 +1,81 @@
+/* ===== General Page Style ===== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+/* ===== Gallery Layout ===== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.img-box {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+/* ===== Normal Image ===== */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+/* ===== Rounded Corners ===== */
+.rounded img {
+  border-radius: 15px;
+}
+
+/* ===== Circular Image ===== */
+.circle img {
+  border-radius: 50%;
+}
+
+/* ===== Borders and Shadow ===== */
+.border-shadow img {
+  border: 5px solid black;
+  box-shadow: 5px 5px 10px gray;
+}
+
+/* ===== Hover Effect ===== */
+.hover-zoom img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== CSS Filters ===== */
+.filter img {
+  filter: grayscale(100%);
+}
+
+.filter img:hover {
+  filter: none;
+}
+
+/* ===== Overlay ===== */
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.img-box:hover .overlay-text {
+  opacity: 1;
+}

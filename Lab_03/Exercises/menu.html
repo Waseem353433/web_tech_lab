@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Menu Styling</title>
+  <link rel="stylesheet" href="../styles/menu.css">
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+</head>
+<body>
+
+<h2>Horizontal Menu</h2>
+
+<div class="navbar">
+
+<div class="menu-btn" onclick="toggleMenu()">
+Menu
+</div>
+
+<ul id="menu">
+
+<li><a href="#" class="active">Home</a></li>
+
+<li><a href="#">About</a></li>
+
+<li class="dropdown">
+<a href="#">Services</a>
+
+<div class="dropdown-content">
+<a href="#">Web</a>
+<a href="#">App</a>
+<a href="#">Design</a>
+</div>
+
+</li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+<h2>Vertical Menu</h2>
+
+<div class="navbar vertical">
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+</body>
+</html>

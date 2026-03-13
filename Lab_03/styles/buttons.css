@@ -1,0 +1,60 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+h1 {
+  margin: 20px;
+}
+
+/* Base button */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+/* Sizes */
+.small { font-size: 12px; }
+.medium { font-size: 16px; }
+.large { font-size: 22px; }
+
+/* Colors */
+.red { background: red; color: white; }
+.green { background: green; color: white; }
+.blue { background: blue; color: white; }
+
+/* Shapes */
+.round { border-radius: 10px; }
+.circle { border-radius: 50px; }
+
+/* Hover */
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Focus */
+.btn:focus {
+  outline: 3px solid black;
+}
+
+/* Shadow */
+.shadow {
+  box-shadow: 3px 3px 8px gray;
+}
+
+/* Gradient */
+.gradient {
+  background: linear-gradient(to right, orange, pink);
+  color: white;
+}
+
+/* Disabled */
+.disabled {
+  background: gray;
+  cursor: not-allowed;
+  opacity: 0.5;
+}

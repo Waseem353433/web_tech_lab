@@ -1,0 +1,28 @@
+/* ===== 5 Basic Selectors ===== */
+body { font-family: Arial, sans-serif; background-color: #f9f9f9; }
+h1 { color: darkblue; }
+.highlight { background-color: yellow; }
+#main-title { text-align: center; }
+p { font-size: 16px; }
+
+/* ===== 3 Attribute Selectors ===== */
+a[href^="https"] { color: green; }
+img[alt$="icon"] { width: 50px; }
+input[type="text"] { border: 2px solid #333; padding: 5px; }
+
+/* ===== 4 Combinators ===== */
+div > p { color: purple; }
+ul li { list-style-type: square; }
+h2 + p { font-style: italic; }
+h2 ~ ul { border: 1px dashed #666; padding: 10px; }
+
+/* ===== 5 Pseudo-classes ===== */
+a:hover { text-decoration: underline; }
+li:first-child { color: red; }
+li:last-child { color: blue; }
+li:nth-child(2) { font-weight: bold; }
+input:focus { background-color: lightcyan; }
+
+/* ===== 2 Pseudo-elements ===== */
+p::first-line { font-size: 18px; font-weight: bold; }
+h1::after { content: " 🎉"; }

@@ -1,0 +1,80 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Montserrat:wght@300;600&display=swap');
+
+/* ===== Body and General Styling ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ===== Font Families ===== */
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px #888;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 16px; /* px */
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+p.em {
+  font-size: 1.2em; /* em */
+}
+
+p.rem {
+  font-size: 1.5rem; /* rem */
+}
+
+p.percent {
+  font-size: 120%; /* percentage */
+}
+
+/* ===== Text Alignment ===== */
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+/* ===== Text Transformations ===== */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* ===== Text Decoration ===== */
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.overline { text-decoration: overline; }
+
+/* ===== Text Shadow ===== */
+.shadow-light {
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+.shadow-strong {
+  text-shadow: 3px 3px 5px #666;
+}

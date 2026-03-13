@@ -1,0 +1,97 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+  background: #333;
+}
+
+/* menu list */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* horizontal */
+}
+
+/* menu items */
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* hover */
+.navbar a:hover {
+  background: orange;
+}
+
+/* active */
+.active {
+  background: green;
+}
+
+/* ===== Dropdown ===== */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #444;
+  min-width: 120px;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+/* show dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ===== Vertical Menu ===== */
+.vertical {
+  width: 150px;
+}
+
+.vertical ul {
+  display: block;
+}
+
+.vertical a {
+  border-bottom: 1px solid #555;
+}
+
+/* ===== Button for mobile ===== */
+.menu-btn {
+  display: none;
+  background: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+}
