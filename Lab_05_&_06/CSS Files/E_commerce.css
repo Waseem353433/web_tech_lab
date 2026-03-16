@@ -1,0 +1,111 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+/* Layout using grid */
+
+.layout{
+
+display:grid;
+
+grid-template-areas:
+"header"
+"sidebar"
+"products"
+"footer";
+
+}
+
+/* Areas */
+
+header{
+grid-area:header;
+background:black;
+color:white;
+padding:15px;
+}
+
+.sidebar{
+grid-area:sidebar;
+background:lightgray;
+padding:10px;
+}
+
+.products{
+grid-area:products;
+
+display:grid;
+grid-template-columns:1fr;
+gap:10px;
+padding:10px;
+}
+
+footer{
+grid-area:footer;
+background:black;
+color:white;
+padding:15px;
+}
+
+/* Product card */
+
+.card{
+border:1px solid black;
+padding:10px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+}
+
+/* Tablet */
+
+@media(min-width:600px){
+
+.layout{
+
+grid-template-areas:
+"header header"
+"sidebar products"
+"footer footer";
+
+grid-template-columns:200px 1fr;
+
+}
+
+.products{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+/* Desktop */
+
+@media(min-width:900px){
+
+.products{
+grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* Mobile off canvas */
+
+@media(max-width:599px){
+
+.sidebar{
+position:fixed;
+left:-200px;
+top:0;
+width:200px;
+height:100%;
+transition:0.3s;
+}
+
+.sidebar:hover{
+left:0;
+}
+
+}

@@ -1,0 +1,102 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+/* Grid layout */
+
+.layout{
+
+display:grid;
+
+grid-template-areas:
+"sidebar header"
+"sidebar main";
+
+grid-template-columns:200px 1fr;
+
+height:100vh;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+grid-area:sidebar;
+background:black;
+color:white;
+padding:10px;
+position:fixed;
+width:200px;
+height:100%;
+}
+
+/* Header */
+
+.header{
+grid-area:header;
+background:gray;
+padding:15px;
+margin-left:200px;
+}
+
+/* Main */
+
+.main{
+grid-area:main;
+padding:10px;
+margin-left:200px;
+}
+
+/* Cards using flexbox */
+
+.cards{
+display:flex;
+gap:10px;
+}
+
+.card{
+flex:1;
+border:1px solid black;
+padding:10px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.sidebar{
+width:60px;
+}
+
+.header{
+margin-left:60px;
+}
+
+.main{
+margin-left:60px;
+}
+
+}
+
+@media(max-width:600px){
+
+.layout{
+
+grid-template-areas:
+"header"
+"main";
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+display:none;
+}
+
+.cards{
+flex-direction:column;
+}
+
+}

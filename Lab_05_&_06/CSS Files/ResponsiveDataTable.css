@@ -1,0 +1,57 @@
+body{
+font-family:Arial;
+margin:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th, td{
+border:1px solid black;
+padding:10px;
+text-align:left;
+}
+
+
+/* Tablet → card layout */
+
+@media(max-width:900px){
+
+table,
+tr,
+td,
+th{
+display:block;
+width:100%;
+}
+
+tr{
+margin-bottom:10px;
+border:1px solid black;
+padding:5px;
+}
+
+th{
+background:lightgray;
+}
+
+}
+
+
+/* Mobile → stacked */
+
+@media(max-width:600px){
+
+th{
+display:none;
+}
+
+td{
+display:block;
+border:none;
+border-bottom:1px solid black;
+}
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Challenge</title>
+    <link rel="stylesheet" href="../CSS Files/Positioning.css">
+</head>
+<body>
+
+<!-- Fixed Header -->
+<header class="header">
+    Fixed Header
+</header>
+
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sticky">Sticky Box</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Main Content</h2>
+        <p>Scroll to see sticky and fixed effects.</p>
+
+        <button onclick="showModal()">Open Modal</button>
+
+        <div style="height:800px"></div>
+    </div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <h2>Modal Dialog</h2>
+        <button onclick="hideModal()">Close</button>
+    </div>
+</div>
+
+
+<!-- Z index demo -->
+<div class="box red"></div>
+<div class="box blue"></div>
+
+
+<script>
+function showModal() {
+    document.getElementById("modal").style.display = "block";
+}
+
+function hideModal() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

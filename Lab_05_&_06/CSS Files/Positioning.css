@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/* Header */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Layout */
+
+.container {
+    margin-top: 50px;
+}
+
+.sidebar {
+    width: 25%;
+    float: left;
+    height: 1000px;
+    background: lightgray;
+}
+
+.main {
+    width: 75%;
+    float: left;
+    padding: 10px;
+}
+
+
+/* Sticky */
+
+.sticky {
+    position: sticky;
+    top: 60px;
+    background: yellow;
+    padding: 10px;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    width: 40%;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.modal-box {
+    background: white;
+    padding: 20px;
+}
+
+
+/* Z index */
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 500px;
+}
+
+.red {
+    background: red;
+    left: 50px;
+    z-index: 1;
+}
+
+.blue {
+    background: blue;
+    left: 80px;
+    z-index: 2;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .header {
+        position: static;
+    }
+
+    .sidebar {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        float: none;
+        width: 100%;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+/* Container */
+
+.container {
+    width: 100%;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    float: left;
+    width: 25%;
+    background: lightgray;
+    padding: 10px;
+}
+
+
+/* Main */
+
+.main {
+    float: left;
+    width: 75%;
+    padding: 10px;
+}
+
+
+/* Image wrap */
+
+.img-left {
+    float: left;
+    margin: 10px;
+}
+
+
+/* Columns */
+
+.columns {
+    width: 100%;
+}
+
+.col {
+    float: left;
+    width: 33%;
+    background: lightblue;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Clear float */
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .main {
+        float: none;
+        width: 100%;
+    }
+
+    .col {
+        float: none;
+        width: 100%;
+    }
+
+    .img-left {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+}

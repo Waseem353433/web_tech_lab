@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Navigation</title>
+    <link rel="stylesheet" href="../CSS Files/FlexboxNavigationSysem.css">
+</head>
+<body>
+
+<header class="topnav">
+
+    <div class="logo">MySite</div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav" id="nav">
+        <li>Home</li>
+
+        <li class="dropdown">
+            Services
+            <ul class="dropdown-menu">
+                <li>Web</li>
+                <li>App</li>
+                <li>Design</li>
+            </ul>
+        </li>
+
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+</header>
+
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div>Dashboard</div>
+        <div>Profile</div>
+        <div>Settings</div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Flexbox Navigation System</h2>
+    </div>
+
+</div>
+
+
+<script>
+function toggleMenu(){
+    document.getElementById("nav").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>

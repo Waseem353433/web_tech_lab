@@ -1,0 +1,65 @@
+body{
+    font-family:Arial;
+    margin:20px;
+}
+
+/* Container */
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+/* Card */
+
+.card{
+    display:flex;
+    flex-direction:column;
+    border:1px solid black;
+    padding:10px;
+    flex:1 1 30%;
+}
+
+/* Content alignment */
+
+.card p{
+    flex:1;
+}
+
+/* Actions bottom */
+
+.actions{
+    margin-top:auto;
+}
+
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    .card{
+        flex:1 1 100%;
+    }
+
+}
+
+/* Tablet */
+
+@media (min-width:601px) and (max-width:900px){
+
+    .card{
+        flex:1 1 45%;
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width:901px){
+
+    .card{
+        flex:1 1 30%;
+    }
+
+}

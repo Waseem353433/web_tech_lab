@@ -1,0 +1,82 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+
+/* Block Inline Inline-block */
+
+.block {
+    display: block;
+    background: lightblue;
+    margin: 5px;
+}
+
+.inline {
+    display: inline;
+    background: lightgreen;
+}
+
+.inline-block {
+    display: inline-block;
+    background: orange;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+}
+
+
+/* Table without table */
+
+.table {
+    display: table;
+    border: 2px solid black;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* Hidden elements */
+
+.hide-mobile {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+
+.hide-desktop {
+    background: purple;
+    color: white;
+    padding: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .block {
+        display: inline;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+}
+
+@media (min-width: 601px) {
+
+    .hide-desktop {
+        display: none;
+    }
+
+}
